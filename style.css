@@ -8,6 +8,7 @@ html{
 }
 body{
     font-family: sans-serif;
+    background-color: #0E8388;
     
 }
 header{
@@ -21,13 +22,13 @@ article{
     height: 120rem;
     background-color: #0E8388;
     display: flex;
-    padding: 5rem;
+    padding-bottom: 10rem;
+    padding-top:  10rem;
     flex-wrap: wrap;
     gap: 8rem;
     justify-content: center;
     align-items: center;
-    display: grid;
-    
+    margin-bottom: 10rem;
 }
 
 .box-wrapper{
@@ -36,8 +37,6 @@ width:80rem;
 height: 30rem;
 background-color: #CBE4DE;
 border-radius: 25px;
-
-
 }
 
 footer{
