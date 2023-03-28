@@ -11,10 +11,34 @@ body{
     background-color: #0E8388;
     
 }
+
+
+.companyName{
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    margin-left:10rem;
+    font-size:6.4rem;
+    font-family: OCRA;
+    color: #CBE4DE
+}
+
 header{
     width: 100vw;
     height: 15rem;
     background-color: #2E4F4F;
+}
+
+header > .box-wrapper-logo{
+    display:flex;
+    justify-content: right; 
+}
+
+header > .box-wrapper-logo > .logo{
+    display:flex;
+    width:30rem;
+    height:10rem;
+    margin-top: -5rem;
 }
 
 article{
