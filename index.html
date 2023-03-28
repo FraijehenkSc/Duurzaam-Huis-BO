@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="main.js" defer ></script>
+    <script src="js/main.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h2>Greentech</h2>
@@ -32,13 +34,33 @@
 
         <section class="box-wrapper"></section>
         <section class="box-wrapper"></section>
-        <section class="box-wrapper"></section>
-        <section class="box-wrapper"></section>   	    
+        <section id="js--weather" class="box-wrapper">
+
+            <div id="js--time"></div>
+
+                <div class="row" style="text-align: center;">
+                    <form class="searchForm" id="js--searchForm" action="">
+                        <input type="search" id="search" placeholder="Search by city name">
+                    </form>
+                </div>
+                <div class="row" id="weather">
+                    <div>
+                        <img id="js--weatherImage" src="https://openweathermap.org/img/wn/04n@2x.png" alt="">
+                    </div>
+                    <div>
+                        <h2 id="js--temperature">32 ℃</h2>
+                        <h4 id="js--cloudy"> Clear </h4>
+                    </div>
+        </section>
+                
+           
+            <section class="box-wrapper"></section>
     </article>
-<footer>
-    <h2>Footer</h2>
-</footer>
+    <footer>
+        <h2>Footer</h2>
+    </footer>
 
 
 </body>
+
 </html>

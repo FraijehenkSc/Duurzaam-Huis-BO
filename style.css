@@ -45,6 +45,34 @@ footer{
     background-color: #2E4F4F;
 }
 
+.time{
+    font-size:4rem;
+}
+
+
+#search{
+    font-size:2.5rem;
+    padding:1rem;
+    border-radius:0.5rem;
+    border:none;
+    outline:none;
+    box-shadow: 0rem 0rem 0.5rem grey;
+}
+
+
+
+.row{
+    display:flex;
+    align-items: center; 
+    align-content: center;
+    justify-content: center;
+    width: 100rem;
+    margin: 1rem;
+    font-size:4rem;
+    color:white;
+}
+
+
 .dateWrapper{
     background-color: red;
     border-radius: 20px;
