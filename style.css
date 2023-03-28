@@ -32,11 +32,11 @@ article{
 }
 
 .box-wrapper{
-display: flex;  
-width:80rem;
-height: 30rem;
-background-color: #CBE4DE;
-border-radius: 25px;
+    display: flex;  
+    width:80rem;
+    height: 30rem;
+    background-color: #CBE4DE;
+    border-radius: 25px;
 }
 
 footer{
@@ -44,3 +44,53 @@ footer{
     height: 15rem;
     background-color: #2E4F4F;
 }
+
+.dateWrapper{
+    background-color: red;
+    border-radius: 20px;
+}
+
+.dateBox{
+    width: 50%;
+    background-color: #CBE4DE;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+.boxLeft{
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    display: flex;
+}
+.boxLeft > h2{
+    font-size: 10rem;
+    position: relative;
+    left: 15%;
+    color: #0E8388;
+}
+.boxRight{
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #2E4F4F;
+}
+.dateHeader{
+    width: 100%;
+    background-color: #CBE4DE;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 18px;
+}
+.dateHeader > h2{
+    font-size: 4rem;
+    color: #2E4F4F;
+}
+
+.timeValue{
+    font-size: 12rem;
+    position: relative;
+    left: 12%;
+    top: 12%;
+    color: #CBE4DE;
+}   
