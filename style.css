@@ -39,6 +39,34 @@ article{
     border-radius: 25px;
 }
 
+.sunWrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.sunWrapper > h1{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: #2E4F4F;    
+}
+
+.sunWrapper > h2{
+    font-size: 4rem;
+    width: 100%;
+    background-color: #CBE4DE;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    color: #0E8388;
+    border: 1px solid black;
+}
+
 footer{
     width: 100vw;
     height: 15rem;
