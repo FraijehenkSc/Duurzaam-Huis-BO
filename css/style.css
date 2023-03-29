@@ -93,4 +93,28 @@ footer{
     left: 12%;
     top: 12%;
     color: #CBE4DE;
-}   
+} 
+
+.outside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middleBox{
+    height: 100%;
+    background-color: #2E4F4F;
+    color: #CBE4DE;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.middleBox > h2{
+    font-size: 3rem;
+}
+.middleBox > img{
+    width: 60%;
+    height: 50%;
+}
