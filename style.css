@@ -14,9 +14,6 @@ body{
 
 
 .companyName{
-    display:flex;
-    justify-content: left;
-    align-items: center;
     margin-left:10rem;
     font-size:6.4rem;
     font-family: OCRA;
@@ -24,21 +21,22 @@ body{
 }
 
 header{
+    display:flex;
+    align-items: center;
     width: 100vw;
     height: 15rem;
     background-color: #2E4F4F;
 }
 
 header > .box-wrapper-logo{
-    display:flex;
-    justify-content: right; 
+   
 }
 
 header > .box-wrapper-logo > .logo{
     display:flex;
-    width:30rem;
-    height:10rem;
-    margin-top: -5rem;
+    justify-content: right;
+    width:240rem;
+    height:12rem;
 }
 
 article{
@@ -61,6 +59,44 @@ article{
     height: 30rem;
     background-color: #CBE4DE;
     border-radius: 25px;
+}
+
+
+.sunWrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sunWrapper > h1{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: #2E4F4F;    
+}
+
+.sunWrapper > h2{
+    font-size: 4rem;
+    width: 100%;
+    background-color: #CBE4DE;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    color: #0E8388;
+    border: 1px solid black;
+}
+
+.sunWrapper > h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #0E8388;
 }
 
 footer{
@@ -145,4 +181,29 @@ footer{
     left: 12%;
     top: 12%;
     color: #CBE4DE;
-}   
+}
+
+
+.outside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middleBox{
+    height: 100%;
+    background-color: #2E4F4F;
+    color: #CBE4DE;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.middleBox > h2{
+    font-size: 3rem;
+}
+.middleBox > img{
+    width: 60%;
+    height: 50%;
+}

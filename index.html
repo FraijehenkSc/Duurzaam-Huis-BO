@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="js/main.js" defer></script>
+    <script src="js/sunTime.js" defer ></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -32,11 +33,21 @@
         </section>
 
         <section class="box-wrapper">
-            <h2 id="" class=""></h2>
-            <p></p>
+            <section class="box-wrapper outside">
+            <div class="middleBox">
+                <img src="/logo/home.webp" alt="">
+                <h2 class="text">Buiten is het</h2>
+                <h2 class="degrees">24° C</h2>
+            </div>
         </section>
-
-        <section class="box-wrapper"></section>
+        </section>
+        
+        <section class="box-wrapper sunWrapper">
+            <h2 class="sunTitle">ZonTijden</h2>
+            <h1 id="js--sunrise">Loading..</h1>
+            <h1 id="js--sunset">Loading..</h1>
+            <h3 id="js--timeZone">Loading..</h3>
+        </section>
         <section class="box-wrapper"></section>
         <section id="js--weather" class="box-wrapper">
 
@@ -49,10 +60,10 @@
                 </div>
                 <div class="row" id="weather">
                     <div>
-                        <img id="js--weatherImage" src="https://openweathermap.org/img/wn/04n@2x.png" alt="">
+                        <img id="js--weatherImage" src="" alt="">
                     </div>
                     <div>
-                        <h2 id="js--temperature">32 ℃</h2>
+                        <h2 id="js--temperature">0 ℃</h2>
                         <h4 id="js--cloudy"> Clear </h4>
                     </div>
         </section>
