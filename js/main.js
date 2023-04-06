@@ -4,13 +4,22 @@ const search = document.querySelector("#search")
 const weather = document.getElementById("js--weather")
 const getWeather = async(city) => {
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
-    const urlA = `https://api.openweathermap.org/data/2.5/weather?q=amsterdam&appid=${API_KEY}&units=metric`
+    const url2 = `https://api.openweathermap.org/data/2.5/weather?q=$amsterdam&appid=${API_KEY}&units=metric`
+    console.log(url2);
     const response = await fetch(url);
     const data = await response.json();
     console.log(url);
-    console.log(urlA);
-    return showWeather(data);
+    return showWeather(data)
+}
 
+
+const getWeatherA = async() => {
+    const url2 = `https://api.openweathermap.org/data/2.5/weather?q=amsterdam&appid=${API_KEY}&units=metric`
+    console.log(url2);
+    const responseA = await fetch(url2);
+    const dataA = await responseA.json();
+    console.log(url2);
+    return showWeatherA(dataA);
 }
 
 
@@ -26,17 +35,30 @@ const showWeather = (data) => {
 
 
 
+
 form.addEventListener(
     "submit",
     function(event){
         getWeather(search.value);
+        getWeatherA(search.value);
         event.preventDefault();
     }
 
 )
 
-const  ctx = document.getElementById("js--chart--1")
+const weatherA = document.getElementById("js--temperatureA")
+const showWeatherA = (dataA) => {
+    console.log(dataA);
+    weatherA.innerText = dataA.main.temp + " ℃"
+}
 
+const test = function(){
+    getWeatherA(search.value);
+}   
+
+test();
+
+const ctx = document.getElementById("js--chart--1")
 
 const labels = [
     "Keuken",
@@ -44,33 +66,32 @@ const labels = [
     "Tuin",
 ];
 
-const data = {
-    labels: labels,
-    
-    datasets:[
-        {
-            label: "Energie verbruik",
-            data: [34,22,44],
-            backgroundColor: [
-                '#92C9BD',
-                '#0E8388',
-                '#2E4F4F',
-
-
-            ],
-        }
-    ]
-}
-
-const config = {
-    type:'doughnut',
-    data: data,
-}
-const config2 = {
-    type:'bar',
-    data: data,
-}
-
-new Chart(document.getElementById("js--chart--1"),config);
-new Chart(document.getElementById("js--chart--2"),config2);
-
+const data = {	 
+     	labels: labels,
+     	 
+     	datasets:[
+     	{
+     	label: "Energie verbruik",
+     	data: [34,22,44],
+     	backgroundColor: [
+     	'#92C9BD',
+     	'#0E8388',
+     	'#2E4F4F',
+     	 
+     	 
+     	],
+     	}
+     	]
+     	}
+     	 
+     	const config = {
+     	type:'doughnut',
+     	data: data,
+     	}
+     	const config2 = {
+     	type:'bar',
+     	data: data,
+     	}
+     	 
+     	new Chart(document.getElementById("js--chart--1"),config);
+     	new Chart(document.getElementById("js--chart--2"),config2);
