@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: sans-serif;
+    background-color: #0E8388;
+    
+}
+
+
+.companyName{
+    margin-left:10rem;
+    font-size:6.4rem;
+    font-family: OCRA;
+    color: #CBE4DE
+}
+
+header{
+    display:flex;
+    align-items: center;
+    width: 100vw;
+    height: 15rem;
+    background-color: #2E4F4F;
+}
+
+header > .box-wrapper-logo{
+   
+}
+
+header > .box-wrapper-logo > .logo{
+    display:flex;
+    justify-content: right;
+    width:240rem;
+    height:12rem;
+    position: absolute;
+    left: -700px;
+    top: 20px;
+}
+
+article{
+    width: 100vw;
+    height: 120rem;
+    background-color: #0E8388;
+    display: flex;
+    padding-bottom: 10rem;
+    padding-top:  10rem;
+    flex-wrap: wrap;
+    gap: 8rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+.box-wrapper{
+    display: flex;  
+    width:80rem;
+    height: 30rem;
+    background-color: #CBE4DE;
+    border-radius: 25px;
+}
+
+
+.sunWrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sunWrapper > h1{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: #2E4F4F;    
+}
+
+.sunWrapper > h2{
+    font-size: 4rem;
+    width: 100%;
+    background-color: #CBE4DE;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    color: #0E8388;
+    border: 1px solid black;
+}
+
+.sunWrapper > h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #0E8388;
+}
+
+footer{
+    width: 100vw;
+    height: 15rem;
+    background-color: #2E4F4F;
+}
+
+.time{
+    font-size:4rem;
+}
+
+.date{
+    font-size: 1rem;
+}
+
+#search{
+    font-size:2.5rem;
+    padding:1rem;
+    border-radius:0.5rem;
+    border:none;
+    outline:none;
+    box-shadow: 0rem 0rem 0.5rem grey;
+}
+
+
+
+.row{
+    display:flex;
+    align-items: center; 
+    align-content: center;
+    justify-content: center;
+    width: 100rem;
+    margin: 1rem;
+    font-size:4rem;
+    color:white;
+}
+
+
+.dateWrapper{
+    background-color: red;
+    border-radius: 20px;
+}
+
+.dateBox{
+    width: 50%;
+    background-color: #CBE4DE;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+.boxLeft{
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    display: flex;
+}
+.boxLeft > h2{
+    font-size: 6rem;
+    position: relative;
+    left: 10%;
+    color: #0E8388;
+}
+.boxRight{
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #2E4F4F;
+}
+.dateHeader{
+    width: 100%;
+    background-color: #CBE4DE;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 18px;
+}
+.dateHeader > h2{
+    font-size: 4rem;
+    color: #2E4F4F;
+}
+
+.timeValue{
+    font-size: 12rem;
+    position: relative;
+    left: 12%;
+    top: 12%;
+    color: #CBE4DE;
+}
+
+.charts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.chart{
+    padding: 1.5rem;
+}
+.dChart{
+    width:50%; 
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dChart > canvas{ 
+    width: 100%;
+    height: 100% !important;
+}
+.bChart{
+    width:50%; 
+    height: 100%;
+    border-left: 1px solid white;
+}
+
+.bChart > canvas{
+    width:100% !important;
+    height:95% !important;
+}
+.outside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middleBox{
+    height: 100%;
+    background-color: #2E4F4F;
+    color: #CBE4DE;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.middleBox > h2{
+    font-size: 3rem;
+}
+.middleBox > img{
+    width: 60%;
+    height: 60%;
+    padding-bottom: 40px;
+    color: #0E8388;
+}

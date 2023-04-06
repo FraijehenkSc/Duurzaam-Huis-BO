@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.83 116.24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f1f1f2;
+        font-family: Bahnschrift-SemiBold, Bahnschrift;
+        font-size: 12px;
+        font-variation-settings: 'wght' 600, 'wdth' 100;
+        font-weight: 600;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        fill: #0e8388;
+      }
+
+      .cls-4 {
+        fill: #cbe4de;
+      }
+    </style>
+  </defs>
+  <ellipse class="cls-3" cx="64.06" cy="59.54" rx="46.96" ry="39.62"/>
+  <text class="cls-1" transform="translate(39.69 62.36)"><tspan x="0" y="0">G</tspan><tspan class="cls-2" x="7.76" y="0">r</tspan><tspan x="12.76" y="0">eentech</tspan></text>
+  <polyline class="cls-4" points="65.22 116.24 .16 64.81 130.83 64.81"/>
+  <polyline class="cls-4" points="65.61 0 130.67 51.44 0 51.44"/>
+</svg>

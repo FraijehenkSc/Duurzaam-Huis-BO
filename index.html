@@ -1,47 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="js/main.js" defer ></script>
-    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/main.js"defer></script>
+    <script src="js/sunTime.js" defer ></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <h2>Greentech</h2>
+        <h2 class ="companyName">Greentech</h2>
+        
+        <section class="box-wrapper-logo">
+            <img class="logo" src="logo/logo2.svg">
+        </section>
     </header>
     <article>
         <section class="box-wrapper dateWrapper">
             <div class="dateBox boxLeft">
-                <h2 class="date">Ma 6 Maart</h2>
+                <h2 id="js--date" class="date">Do 30 Maart</h2>
             </div>
             <div class="dateBox boxRight">
                 <div class="dateHeader">
                     <h2 class="timeText">Tijd(GMT+1)</h2>
                 </div>
-                <h2 class="timeValue">20:34</h2>
+                <h2 id="js--clock" class="timeValue">20:34</h2>
             </div>
         </section>
 
-        <section class="box-wrapper outside">
+        <section class="box-wrapper">
+            <section class="box-wrapper outside">
             <div class="middleBox">
                 <img src="/logo/home.webp" alt="">
                 <h2 class="text">Buiten is het</h2>
-                <h2 class="degrees">24° C</h2>
+                <h2 class="degrees">13° C</h2>
             </div>
         </section>
+        </section>
+        
+        <section class="box-wrapper sunWrapper">
+            <h2 class="sunTitle">ZonTijden</h2>
+            <h1 id="js--sunrise">Loading..</h1>
+            <h1 id="js--sunset">Loading..</h1>
+            <h3 id="js--timeZone">Loading..</h3>
+        </section>
+        <section  class="box-wrapper charts">
+            <div class="chart dChart">
+                <canvas id="js--chart--1"></canvas>
+            </div>
+            <div  class="chart bChart">
+                <canvas id="js--chart--2"></canvas>
+            </div>
+        </section>
+        <section id="js--weather" class="box-wrapper">
 
-        <section class="box-wrapper"></section>
-        <section class="box-wrapper"></section>
-        <section class="box-wrapper"></section>
-        <section class="box-wrapper"></section>   	    
+            <div id="js--time"></div>
+
+                <div class="row" style="text-align: center;">
+                    <form class="searchForm" id="js--searchForm" action="">
+                        <input type="search" id="search" placeholder="Search by city name">
+                    </form>
+                </div>
+                <div class="row" id="weather">
+                    <div>
+                        <img id="js--weatherImage" src="" alt="">
+                    </div>
+                    <div>
+                        <h2 id="js--temperature">0 ℃</h2>
+                        <h4 id="js--cloudy"> Clear </h4>
+                    </div>
+        </section>
+                
+           
+            <section class="box-wrapper outside">
+                <div class="middleBox "></div>
+            </section>
     </article>
-<footer>
-    <h2>Footer</h2>
-</footer>
-
-
 </body>
+
 </html>
