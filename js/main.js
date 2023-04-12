@@ -93,16 +93,34 @@ const data = {	 
      	data: data,
      	}
 
-const
+const labels1 = [
+    "Pc",
+    "Tv",
+    "Koelkast",
+];
 
-const data1 = {
-    labels: labels1
-}
-        const config3 = {
-        type: 'polarArea',
-        data: data2,
-        }
+const data1 = {	 
+     	labels: labels1,
      	 
+     	datasets:[
+     	{
+     	label: "Elekra verbruik",
+     	data: [32,23,44],
+     	backgroundColor: [
+     	'#92C9BD',
+     	'#0E8388',
+     	'#2E4F4F',
+     	 
+     	 
+     	],
+     	}
+     	]
+     	}
+
+        const config3 = {
+     	type:'polarArea',
+     	data: data1,
+     	}
      	new Chart(document.getElementById("js--chart--1"),config);
      	new Chart(document.getElementById("js--chart--2"),config2);
         new Chart(document.getElementById("js--chart--3"),config3);
