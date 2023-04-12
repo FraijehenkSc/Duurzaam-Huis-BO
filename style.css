@@ -113,7 +113,8 @@ footer{
 }
 
 .date{
-    font-size: 1rem;
+
+    font-size: 3rem;
 }
 
 #search{
@@ -155,11 +156,11 @@ footer{
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .boxLeft > h2{
-    font-size: 6rem;
-    position: relative;
-    left: 10%;
+    font-size: 3rem;
     color: #0E8388;
 }
 .boxRight{
