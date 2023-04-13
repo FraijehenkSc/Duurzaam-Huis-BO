@@ -126,3 +126,94 @@ const data1 = {	 
      	new Chart(document.getElementById("js--chart--1"),config);
      	new Chart(document.getElementById("js--chart--2"),config2);
         new Chart(document.getElementById("js--chart--3"),config3);
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        const labelsWater = [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "Mei",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Okt",
+            "Nov",
+            "Dec",
+        ]
+        const dataWater = {	 
+             	labels: labelsWater,
+             	 
+             	datasets:[
+             	{
+             	label: "Water verbruik | Per maand in liters",
+             	data: [32,23,44,32,23,44,32,23,44,32,23,44],
+             	backgroundColor: [
+             	'#92C9BD',
+             	'#0E8388',
+             	'#2E4F4F',
+                '#92C9BD',
+             	'#0E8388',
+             	'#2E4F4F',
+                '#92C9BD',
+             	'#0E8388',
+             	'#2E4F4F',
+                '#92C9BD',
+             	'#0E8388',
+             	'#2E4F4F',
+             	 
+             	 
+             	],
+             	}
+             	]
+             	}
+        
+                const configWater = {
+             	type:'bar',
+             	data: dataWater,
+             	}
+
+            new Chart(document.getElementById("js--chart--4"),configWater);
