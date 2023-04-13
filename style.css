@@ -238,10 +238,23 @@ footer{
 }
 .middleBox > h2{
     font-size: 3rem;
+    position: relative;
+    bottom: 2rem;
 }
 .middleBox > img{
     width: 60%;
-    height: 60%;
+    height: 80%;
+    position: relative;
+    bottom: -0.3rem;
     padding-bottom: 40px;
     color: #0E8388;
+}
+
+.waterUse{
+    
+}
+
+.waterUse > canvas{
+    position: relative;
+    left: 10rem;
 }
