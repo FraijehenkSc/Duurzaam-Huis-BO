@@ -250,9 +250,6 @@ footer{
     color: #0E8388;
 }
 
-<<<<<<< HEAD
-
-=======
 .polarArea{
     display: flex;
     justify-content: center;
@@ -262,7 +259,6 @@ footer{
 .polarArea > canvas{
     width:100% !important;
     height:85% !important;
->>>>>>> 5065f06153ed950fa4d42604ad62dd3a03249d0f
 }
 
 
