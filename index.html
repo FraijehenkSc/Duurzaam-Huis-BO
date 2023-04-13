@@ -7,16 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greentech | Dashboard</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="js/main.js"defer></script>
-    <script src="js/sunTime.js" defer ></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/sunTime.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 
 <body>
     <header>
-        <h2 class ="companyName">Greentech</h2>
-        
+        <h2 class="companyName">Greentech</h2>
+        <a href="smarthome.html">KLIK TEST</a>
+
         <section class="box-wrapper-logo">
             <img class="logo" src="logo/logo2.svg">
         </section>
@@ -36,25 +37,25 @@
 
         <section class="box-wrapper">
             <section class="box-wrapper outside">
-            <div class="middleBox">
-                <img src="img/home.png" alt="">
-                <h2 class="text">Buiten is het</h2>
-                <h2 id="js--temperatureA" class="degrees">13° C</h2>
-            </div>
+                <div class="middleBox">
+                    <img src="img/home.png" alt="">
+                    <h2 class="text">Buiten is het</h2>
+                    <h2 id="js--temperatureA" class="degrees">13° C</h2>
+                </div>
+            </section>
         </section>
-        </section>
-        
+
         <section class="box-wrapper sunWrapper">
             <h2 class="sunTitle">ZonTijden</h2>
             <h1 id="js--sunrise">Loading..</h1>
             <h1 id="js--sunset">Loading..</h1>
             <h3 id="js--timeZone">Loading..</h3>
         </section>
-        <section  class="box-wrapper charts">
+        <section class="box-wrapper charts">
             <div class="chart dChart">
                 <canvas id="js--chart--1"></canvas>
             </div>
-            <div  class="chart bChart">
+            <div class="chart bChart">
                 <canvas id="js--chart--2"></canvas>
             </div>
         </section>
@@ -62,24 +63,30 @@
 
             <div id="js--time"></div>
 
-                <div class="row" style="text-align: center;">
-                    <form class="searchForm" id="js--searchForm" action="">
-                        <input type="search" id="search" placeholder="Search by city name">
-                    </form>
+            <div class="row" style="text-align: center;">
+                <form class="searchForm" id="js--searchForm" action="">
+                    <input type="search" id="search" placeholder="Search by city name">
+                </form>
+            </div>
+            <div class="row" id="weather">
+                <div>
+                    <img id="js--weatherImage" src="" alt="">
                 </div>
-                <div class="row" id="weather">
-                    <div>
-                        <img id="js--weatherImage" src="" alt="">
-                    </div>
-                    <div>
-                        <h2 id="js--temperature">0 ℃</h2>
-                        <h4 id="js--cloudy"> Clear </h4>
-                    </div>
+                <div>
+                    <h2 id="js--temperature">0 ℃</h2>
+                    <h4 id="js--cloudy"> Clear </h4>
+                </div>
         </section>
 
-            <section class="box-wrapper outside">
-                <div class="middleBox "></div>
-            </section>
+        <section class="box-wrapper outside">
+
+                            <div class="kamers">
+
+                                    <canvas id="js--chart--5"></canvas>
+
+                                </div>
+
+                        </section>
 
         <section id="" class="box-wrapper polarArea">
             <div class="">

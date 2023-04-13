@@ -190,7 +190,7 @@ const data1 = {	 
              	datasets:[
              	{
              	label: "Water verbruik | Per maand in liters",
-             	data: [32,23,44,32,23,44,32,23,44,32,23,44],
+             	data: [4234,3926,4322,4111,3778,3887,4000,4100,4440,4102,3746,3946],
              	backgroundColor: [
              	'#92C9BD',
              	'#0E8388',
@@ -217,3 +217,58 @@ const data1 = {	 
              	}
 
             new Chart(document.getElementById("js--chart--4"),configWater);
+
+
+            const labels2 = [
+
+                    "Huiskamer",
+                
+                    "Slaapkamer",
+                
+                    "Badkamer",
+                
+                ]
+
+
+            const data2 = {
+
+                labels: labels2,
+
+                datasets:[
+
+                    {
+
+                        label:"Kamer temperatuur in °C",
+
+                        data: [23,21,19],
+
+                        backgroundColor:[
+
+                            '#2E4F4F',
+
+                            '#0E8388',
+
+                            '#92C9BD',
+
+                        ],
+
+                    }
+
+                ]
+
+            }    
+
+
+
+
+
+            const config6 = {
+
+                type:"bar",
+
+                data:data2,
+
+            }
+                    new Chart(document.getElementById("js--chart--5"),config6);
+
+
