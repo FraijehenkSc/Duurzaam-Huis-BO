@@ -71,8 +71,8 @@ const data = {	 
      	 
      	datasets:[
      	{
-     	label: "Energie verbruik",
-     	data: [34,22,44],
+     	label: "Water verbruik",
+     	data: [50,22,44],
      	backgroundColor: [
      	'#92C9BD',
      	'#0E8388',
@@ -104,8 +104,8 @@ const data1 = {	 
      	 
      	datasets:[
      	{
-     	label: "Elektra verbruik",
-     	data: [32,23,44],
+     	label: "Elektra verbruik in kWh",
+     	data: [8.708265,9.024655,7.592983],
      	backgroundColor: [
      	'#92C9BD',
      	'#0E8388',
