@@ -104,7 +104,7 @@ const data1 = {	 
      	 
      	datasets:[
      	{
-     	label: "Elekra verbruik",
+     	label: "Elektra verbruik",
      	data: [32,23,44],
      	backgroundColor: [
      	'#92C9BD',
@@ -124,3 +124,5 @@ const data1 = {	 
      	new Chart(document.getElementById("js--chart--1"),config);
      	new Chart(document.getElementById("js--chart--2"),config2);
         new Chart(document.getElementById("js--chart--3"),config3);
+
+        

@@ -245,3 +245,14 @@ footer{
     padding-bottom: 40px;
     color: #0E8388;
 }
+
+.polarArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.polarArea > canvas{
+    width:100% !important;
+    height:85% !important;
+}
