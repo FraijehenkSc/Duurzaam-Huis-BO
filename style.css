@@ -195,6 +195,17 @@ footer {
     color: #CBE4DE;
 }
 
+.seconds{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10%;
+    font-size: 3.5rem;
+    color: #CBE4DE;
+    
+}
+
 .charts {
     display: flex;
     justify-content: center;

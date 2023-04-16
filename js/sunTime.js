@@ -29,10 +29,7 @@ const time = currentDate.toLocaleTimeString("en-US", {
     hour12: false,
 });
 
-const clock = document.getElementById("js--clock");
 
-
-clock.innerHTML = time;
 console.log(time);
 today.toDateString() 
 
@@ -50,3 +47,30 @@ console.log(dateT.toLocaleString('en-IN', options));
 const dateSection = document.getElementById("js--date");
 
 dateSection.innerHTML = dateT.toLocaleString('en-IN', options);
+
+
+function currentTime() {
+    let date = new Date(); 
+    let hh = date.getHours();
+    let mm = date.getMinutes();
+    let ss = date.getSeconds();
+  
+    if(hh === 0){
+        hh = 24;
+    }
+    if(hh > 24){
+        hh = hh - 24;
+     }
+  
+     hh = (hh < 10) ? "0" + hh : hh;
+     mm = (mm < 10) ? "0" + mm : mm;
+     ss = (ss < 10) ? "0" + ss : ss;
+      
+     let time = hh + ":" + mm;
+     let seconds = ss;
+  
+    document.getElementById("clock").innerText = time;
+    document.getElementById("seconds").innerText = seconds;
+    let t = setTimeout(function(){ currentTime() }, 1000);
+  }
+  currentTime();
